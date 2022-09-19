@@ -25,9 +25,13 @@
     border: none;
     padding: 9px;
     border-radius: 5px;
-    color: red;
+    /* color: red; */
     border: 1px solid white;
 
+}
+.indimsg{
+    margin-left: 400px;
+    margin-right: 400px;
 }
 #gchat{
 font-family: 'Satisfy', cursive;

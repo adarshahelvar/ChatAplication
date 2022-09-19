@@ -38,11 +38,11 @@ function grps() {
         listofgrps.innerHTML = "you are not part of any group! ";
       } else {
         for (let i = 0; i < result.data.length; i++) {
-          gt += `
-    <div style="border-bottom:1px solid black; padding:6px;">
-    <a style="color:blue; text-decoration:none;" href="groupchat.html?g=${result.data[i].groupId}">${result.data[i].groupname}</a>
-    </div>
-    `;
+    //       gt += `
+    // <div style="border-bottom:1px solid black; padding:6px;">
+    // <a style="color:blue; text-decoration:none;" href="groupchat.html?g=${result.data[i].groupId}">${result.data[i].groupname}</a>
+    // </div>
+    // `;
         }
         listofgrps.innerHTML = gt;
       }

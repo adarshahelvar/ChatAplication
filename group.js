@@ -15,6 +15,7 @@ let namegrp=gname.value;
     }).then(result=>{
         console.log(result);
         grps();
+        alert('Group created successfully visit Home ')
     })
     .catch(err=>{
         console.log(err);

@@ -23,45 +23,44 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="groupchat.css" />
+    
   </head>
   <body>
     <div id="headmsg" class="">
       <h6 id="welcomeuser"></h6>
-
-      <button class="groupsbtn"><a id="waytog" href="group.html">Groups</a></button>
-      <button class="signoutbtn"><h6 id="signout">Sign out</h6></button>
   </div>
-  
+
     <div id="headgrps">
       <h6 id="grpname" class="text-white"></h6>
       <input type="text" name="search" id="searchinp" placeholder="🔎︎"/>
       <h6 id="signoutgrp">Sign Out</h6>
+      <a href="chat.html">Home</a>
     </div>
     <!-- add people -->
 
     <div class="addpeople ">
         <div class="addform text-center">
-            <h6 class="text-white my-3">add to group</h6>
+            <h6 class="text-white my-3">Add to Group</h6>
             <input type="text" id="personemail" class="form-control" placeholder="enter email">
             <select name="" id="adminvalue"class='form-control'>
-                <option value="false">admin:false</option>
-                <option value="true">admin:true</option>
+                <option value="false">Admin:false</option>
+                <option value="true">Admin:true</option>
             </select>
 
-            <button id="addtogroup">add participants</button>
+            <button id="addtogroup">Add</button>
         </div>
 
     </div>
 
     <!--  -->
     <div class="listofgroups">
-        <h6 class="text-dark text-center list2">participants in the group</h6>
+        <h6 class="text-dark text-center list2">Participants<br>To See other Groups Please visit Home</h6>
         <div class="grpparticipants"> 
 
         </div>
-      <h6 class="text-dark text-center list1">
-        list of groups you are part of
-      </h6>
+      <!-- <h6 class="text-dark text-center list1">
+        Your Groups
+      </h6> -->
 
       <div class="listofgrps text-center mt-2"></div>
     </div>

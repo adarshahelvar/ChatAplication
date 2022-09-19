@@ -20,22 +20,15 @@ float: right;
 
 }
 .listofgroups{
-border-right: 2px dashed rgb(235, 138, 1);
-border-bottom: 2px double rgb(248, 9, 9);
-border-left: 2px dotted rgb(15, 214, 55);
 position: absolute;
-top: 0%;
-left: 0%;
-width: 40%;
-background-color:rgb(243, 6, 6);
+top: 50%;
+left: 25%;
+width: 50%;
+background-color:rgb(6, 42, 243);
 padding: 1%;
 }
-.list1{
-border-bottom: 1px solid rgb(249, 250, 249);
-padding-bottom: 10px;
-}
 .creategrp{
-width: 98%;
+width: 60%;
 margin-top: 1%;
 
 }
@@ -56,4 +49,15 @@ margin-top: 30px;
      width: 15%;
     height: 90px; 
     border-radius: 30px;  
+}
+
+.homebtn {
+    font-style: italic !important;
+    border: none;
+    background-color: rgb(150, 215, 225);
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 12px ;
+    color: white;
+
 }

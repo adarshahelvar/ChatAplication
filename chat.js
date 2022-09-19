@@ -12,7 +12,7 @@ axios.get('http://localhost:5555/user',{
         nam+=result.data[0].name;
         console.log(nam);
         
-        welc.innerHTML=`User ${result.data[0].name}`;
+        welc.innerHTML=`${result.data[0].name}`;
 
     })
     .catch(err => {
@@ -51,7 +51,7 @@ sendmsg.addEventListener('click',(e)=>{
             if(result.data.result[i].username==nam){
 res += `
             <div class="p-2 indimsg " style="background:green;border-bottom:4px solid red; color:white; ">
-            <span style="margin-left:20%;" >you : 
+            <span style="margin-left:80%;" >you : 
         </span>
             <span>${result.data.result[i].msg}</span>
             </div> `;
