@@ -12,7 +12,7 @@ axios.get('http://localhost:5555/user',{
         nam+=result.data[0].name;
         console.log(nam);
         
-        welc.innerHTML=`Welcome ${result.data[0].name}`;
+        welc.innerHTML=`User ${result.data[0].name}`;
 
     })
     .catch(err => {
@@ -23,9 +23,7 @@ axios.get('http://localhost:5555/user',{
 
 sendmsg.addEventListener('click',(e)=>{
     let token=localStorage.getItem('token');
-
     let msg=txt.value;
-
     let obj={
         message:msg
     }
@@ -56,12 +54,11 @@ res += `
             <span style="margin-left:20%;" >you : 
         </span>
             <span>${result.data.result[i].msg}</span>
-            </div>
-            `;
+            </div> `;
         }
             else{
           res += `
-            <div class="p-2 indimsg " style="background:red; color:white; border-bottom:4px solid red; ">
+            <div class="p-2 indimsg " style="background:yellow; color:blue; border-bottom:4px solid red; ">
             <span  >${result.data.result[i].username} : 
         </span>
             <span>${result.data.result[i].msg}</span>

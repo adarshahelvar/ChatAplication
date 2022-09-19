@@ -149,3 +149,15 @@ border-right: 1px solid rgb(7, 7, 209);
     margin-bottom: 100px;
 
 }
+
+.groupsbtn {
+    width: 15%;
+    height: 50px;
+    border-radius: 90px;
+}
+
+.signoutbtn {
+     width: 15%;
+    height: 90px; 
+    border-radius: 30px;  
+}
