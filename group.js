@@ -2,7 +2,6 @@ let listofgrps=document.querySelector('.listofgrps');
 let token=localStorage.getItem('token');
 let crtgrp=document.querySelector('#crtgrp');
 
-
 let gname=document.querySelector('#grpname');
 crtgrp.addEventListener('click',()=>{
 let namegrp=gname.value;
@@ -24,8 +23,6 @@ let namegrp=gname.value;
 })
 
 function grps(){
-
-
     axios.get("http://localhost:5555/getallgroups", {
       headers: { authorization: token }
     }).then(result=>{

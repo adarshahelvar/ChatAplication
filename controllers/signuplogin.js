@@ -20,11 +20,8 @@ res.json({result,suc:true})
 })
 };
 
-
-
 exports.postlogin = async (req, res) => {
   let { email, pwd } = req.body;
-
   let user=await User.findAll({where:{email:email}});
 
   if(user.length>0){
@@ -38,14 +35,14 @@ exports.postlogin = async (req, res) => {
 
 
     if (emailpwdmatch) {
-      const token = jwt.sign(dbid,'sajid1234567890');
+      const token = jwt.sign(dbid,'Adarsh1234567890');
       res.status(200).json({ msg: "login successful", token: token });
     } else {
       res.status(401).json({ msg: "something went wrong" });
     }
   }
   else{
-            res.status(404).json({ msg: "user not found" });
+      res.status(404).json({ msg: "user not found" });
 
   }
 
